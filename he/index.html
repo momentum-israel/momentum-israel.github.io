@@ -675,7 +675,7 @@ html:not(.js) .tour-stage{position:relative}
 
 /* footer */
 .foot{padding:72px var(--gutter) 40px;border-top:1px solid var(--line)}
-.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
 .foot-logo{width:min(260px,70vw);height:auto;color:var(--text);fill:currentColor;display:block}
 .foot p,.foot li{color:var(--text-2);font-size:.95rem}
 .foot ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
@@ -1030,15 +1030,13 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 <canvas id="env" aria-hidden="true"></canvas>
 
 <header class="nav" id="nav">
-  <a class="brand" href="./" data-go dir="ltr" aria-label="Momentum Capital Group, לדף הבית">
+  <a class="brand" href="#top" dir="ltr" aria-label="Momentum Capital Group, לדף הבית">
     <span class="m3d" data-spin></span>
     <svg class="brand-word" viewBox="0 0 1081 100" aria-hidden="true" focusable="false"><use href="#wmtop"/></svg>
   </a>
   <div class="nav-cta">
-    <nav class="seg" id="seg" aria-label="ראשי">
+    <nav class="seg" id="seg" aria-label="ראשי" hidden style="display:none">
       <span class="seg-slab" aria-hidden="true"></span>
-      <a href="https://momentum-cyprus.github.io/he/" data-key="cyprus" data-go><span>קפריסין</span></a>
-      <a href="#top" data-key="israel" aria-current="page"><span>ישראל</span></a>
     </nav>
     <div class="lang" dir="ltr"><a href="../" hreflang="en" lang="en" data-lang="en">EN<span class="sr-only"> English</span></a><span class="sep" aria-hidden="true">/</span><span class="cur" aria-current="true">עב</span></div>
     <a class="btn btn-primary btn-sm" href="#consult">פגישת ייעוץ</a>
@@ -1262,7 +1260,6 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <ul class="contact-list rv" style="--d:3">
           <li><span class="k">אימייל</span><a class="js-email" href="#consult">האימייל יתווסף לפני ההשקה</a></li>
           <li><span class="k">טלפון</span><span class="js-phone">הטלפון יתווסף לפני ההשקה</span></li>
-          <li><span class="k">שווקים</span><span>קפריסין וישראל</span></li>
         </ul>
       </div>
       <form class="form rv" style="--d:2" id="form" novalidate>
@@ -1293,11 +1290,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="foot-grid">
       <div>
         <svg class="foot-logo" viewBox="0 0 1390 240" role="img" aria-label="Momentum Capital Group"><use href="#lockupSym"/></svg>
-        <p style="margin-top:22px;max-width:36ch">וילות ובתים לתושבות בקפריסין. פרויקטים חדשים מקבלן ונדל״ן מסחרי בישראל.</p>
-      </div>
-      <div>
-        <h4>ניווט</h4>
-        <ul><li><a href="https://momentum-cyprus.github.io/he/" data-go>קפריסין</a></li><li><a href="./" data-go>ישראל</a></li><li><a href="./" data-go>דף הבית</a></li></ul>
+        <p style="margin-top:22px;max-width:36ch">פרויקטים חדשים מקבלן ונדל״ן מסחרי בישראל.</p>
       </div>
       <div>
         <h4>יצירת קשר</h4>
